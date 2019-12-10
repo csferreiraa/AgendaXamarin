@@ -3,23 +3,29 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
+
 
 namespace AgendaContato.Banco
 {
-    public class AcessoBanco { 
+    public class DataBase { 
 
 
         private SQLiteConnection _conexao;
-        public AcessoBanco()
+        public DataBase()
         {
-            _conexao = new SQLiteConnection();
+            var dep = DependencyService.Get<ICaminho>();
+            string url = dep.GetCaminho("database.sqlite");
+
+            _conexao = new SQLiteConnection(url);
         }
 
         public List<Agenda> Consultar()
         {
             return null;
         }
-        public void Cadastro(Agenda agenda)
+
+        public void Create(Agenda agenda)
         {
 
         }
