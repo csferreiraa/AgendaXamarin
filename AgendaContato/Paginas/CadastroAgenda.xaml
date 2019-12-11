@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AgendaContato.Paginas.CastradoAgenda">
+             x:Class="AgendaContato.Paginas.CadastroAgenda">
     <ContentPage.Content>
         <StackLayout>
             <Entry Placeholder="Nome" />
@@ -20,5 +20,5 @@
             <Button Text="Salvar"/>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage
+</ContentPage>
         

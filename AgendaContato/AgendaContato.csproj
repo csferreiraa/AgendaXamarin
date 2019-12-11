@@ -12,7 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Paginas\CastradoAgenda.xaml">
+    <Compile Update="Paginas\CadastroAgenda.xaml.cs">
+      <DependentUpon>CadastroAgenda.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Paginas\CadastroAgenda.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Paginas\ConsultaAgenda.xaml">
