@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AgendaContato.Paginas.ConsultaAgenda">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Agenda Top" FontSize="24"/>
+                <Label Text="Encontre seus amigos"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Adicionar" Clicked="GoCadastro" />
+                <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
+            </StackLayout>
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto">
+                                </RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Text="{Binding Nome}" FontAttributes="Bold"/>
+                            <Label Grid.Column="0" Text="{Binding Sobrenome}"/>
+                            <Label Grid.Column="0" Text="{Binding Telefone}"/>
+
+                            <Label Text="+Detalhes">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

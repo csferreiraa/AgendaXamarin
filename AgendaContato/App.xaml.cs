@@ -10,7 +10,7 @@ namespace AgendaContato
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new AgendaContato.Paginas.ConsultaAgenda());
         }
 
         protected override void OnStart()
