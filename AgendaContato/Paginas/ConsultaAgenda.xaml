@@ -15,6 +15,8 @@
                 <Button Text="Adicionar" Clicked="GoCadastro" />
                 <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
             </StackLayout>
+            <Entry Placeholder="Pesquisar"/>
+            <Label Text="15 Contatos encontrados" />
             <ListView>
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -31,7 +33,7 @@
                             <Label Grid.Column="0" Text="{Binding Sobrenome}"/>
                             <Label Grid.Column="0" Text="{Binding Telefone}"/>
 
-                            <Label Text="+Detalhes">
+                            <Label Text="+Detalhes" Grid.Column="1">
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
                                 </Label.GestureRecognizers>
