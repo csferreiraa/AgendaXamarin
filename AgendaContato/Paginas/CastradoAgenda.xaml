@@ -7,9 +7,18 @@
              x:Class="AgendaContato.Paginas.CastradoAgenda">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Nome" />
+            <Entry Placeholder="Sobrenome" />
+            <Entry Placeholder="Telefone" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tipo de Telefone"/>
+                <Label Text="Pessoal" />
+                <Switch />
+                <Label Text="Trabalho" />
+            </StackLayout>
+            <Entry Placeholder="Email" />
+            <Button Text="Salvar"/>
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</ContentPage
+        
