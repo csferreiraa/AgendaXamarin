@@ -7,9 +7,11 @@
              x:Class="AgendaContato.Paginas.Detalhe">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding Nome}"/>
+            <Label Text="{Binding Sobrenome}"/>
+            <Label Text="{Binding Telefone}"/>
+            <Label Text="{Binding TipoTelofone}"/>
+            <Label Text="{Binding Email}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
