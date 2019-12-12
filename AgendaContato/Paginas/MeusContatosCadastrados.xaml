@@ -11,13 +11,10 @@
                 <Label Text="Agenda Top" FontSize="24"/>
                 <Label Text="Encontre seus amigos"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Button Text="Adicionar" Clicked="GoCadastro" />
-                <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
-            </StackLayout>
-            <Entry Placeholder="Pesquisar"/>
-            <Label Text="" x:Name="lblCount" />
-            <ListView x:Name="ListaAgenda">
+
+            <Entry Placeholder="Pesquisar" TextChanged="PesquisarAction"/>
+            <Label Text="" x:Name="lblCount"/>
+            <ListView x:Name="ListaAgenda" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

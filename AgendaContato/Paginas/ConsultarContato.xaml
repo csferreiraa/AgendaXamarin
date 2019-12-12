@@ -13,11 +13,10 @@
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Button Text="Adicionar" Clicked="GoCadastro" />
-                <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
             </StackLayout>
             <Entry Placeholder="Pesquisar" TextChanged="PesquisarAction"/>
             <Label Text="" x:Name="lblCount"/>
-            <ListView x:Name="ListaAgenda">
+            <ListView x:Name="ListaAgenda" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -36,11 +35,27 @@
                                     <Label Text="{Binding Telefone}"/>
                                 </StackLayout>
 
-                                <Label Text="+ Detalhes" Grid.Column="1">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
-                                    </Label.GestureRecognizers>
-                                </Label>
+                                <StackLayout Grid.Column="1" Orientation="Horizontal" >
+                                    <Label Text="Editar">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="EditarAction" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+
+                                    <Label Text="|" />
+                                    <Label Text="Excluir">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="ExcluirAction" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+
+                                    <Label Text="+ Detalhes">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    
+                                </StackLayout>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

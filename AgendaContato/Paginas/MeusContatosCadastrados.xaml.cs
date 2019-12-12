@@ -50,5 +50,10 @@ namespace AgendaContato.Paginas
             database.Delete(agenda);
             ConsultarAgenda();
         }
+
+        public void PesquisarAction(object sender, TextChangedEventArgs args)
+        {
+            ListaAgenda.ItemsSource = Lista.Where(a => a.Nome.Contains(args.NewTextValue)).ToList();
+        }
     }
 }

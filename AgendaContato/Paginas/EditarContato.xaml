@@ -6,18 +6,20 @@
              mc:Ignorable="d"
              x:Class="AgendaContato.Paginas.EditarContato">
     <ContentPage.Content>
-        <StackLayout>
-            <Entry x:Name="Nome" Placeholder="Nome" />
-            <Entry x:Name="Sobrenome" Placeholder="Sobrenome" />
-            <Entry x:Name="Telefone" Placeholder="Telefone" />
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Tipo de Telefone"/>
-                <Label Text="Pessoal" />
-                <Switch x:Name="TipoTelefone"/>
-                <Label Text="Trabalho" />
+        <ScrollView>
+            <StackLayout>
+                <Entry x:Name="Nome" Placeholder="Nome" />
+                <Entry x:Name="Sobrenome" Placeholder="Sobrenome" />
+                <Entry x:Name="Telefone" Placeholder="Telefone" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tipo de Telefone"/>
+                    <Label Text="Pessoal" />
+                    <Switch x:Name="TipoTelefone"/>
+                    <Label Text="Trabalho" />
+                </StackLayout>
+                <Entry x:Name="Email" Placeholder="Email" />
+                <Button Text="Salvar" Clicked="SalvarAction"/>
             </StackLayout>
-            <Entry x:Name="Email" Placeholder="Email" />
-            <Button Text="Salvar" Clicked="SalvarAction"/>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
