@@ -39,7 +39,7 @@ namespace AgendaContato.Paginas
             Label lblDetalhe = (Label)sender;
             TapGestureRecognizer tapGes = (TapGestureRecognizer)lblDetalhe.GestureRecognizers[0];
             Agenda agenda = tapGes.CommandParameter as Agenda;
-            Navigation.PushAsync(new Detalhe(agenda));
+            Navigation.PushAsync(new DetalharContato(agenda));
         }
 
         public void PesquisarAction(object sender, TextChangedEventArgs args)

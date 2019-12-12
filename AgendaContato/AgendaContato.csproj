@@ -18,6 +18,9 @@
     <Compile Update="Paginas\ConsultarContato.xaml.cs">
       <DependentUpon>ConsultarContato.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Paginas\DetalharContato.xaml.cs">
+      <DependentUpon>DetalharContato.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -27,7 +30,7 @@
     <EmbeddedResource Update="Paginas\ConsultarContato.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\Detalhe.xaml">
+    <EmbeddedResource Update="Paginas\DetalharContato.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Paginas\EditarAgenda.xaml">

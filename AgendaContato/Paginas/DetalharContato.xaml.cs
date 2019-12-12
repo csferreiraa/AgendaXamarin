@@ -11,9 +11,9 @@ using Xamarin.Forms.Xaml;
 namespace AgendaContato.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Detalhe : ContentPage
+    public partial class DetalharContato : ContentPage
     {
-        public Detalhe(Agenda agenda)
+        public DetalharContato(Agenda agenda)
         {
             InitializeComponent();
             BindingContext = agenda;
