@@ -15,7 +15,7 @@
                 <Button Text="Adicionar" Clicked="GoCadastro" />
                 <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
             </StackLayout>
-            <Entry Placeholder="Pesquisar"/>
+            <Entry Placeholder="Pesquisar" TextChanged="PesquisarAction"/>
             <Label Text="" x:Name="lblCount"/>
             <ListView x:Name="ListaAgenda">
                 <ListView.ItemTemplate>
@@ -32,11 +32,11 @@
                                 </Grid.RowDefinitions>
                                 <StackLayout  Grid.Column="0">
                                     <Label Text="{Binding Nome}" FontAttributes="Bold"/>
-                                    <Label Text="{Binding Sobrenome}"/>
+                                    <Label Text="{Binding Sobrenome}" FontAttributes="Bold"/>
                                     <Label Text="{Binding Telefone}"/>
                                 </StackLayout>
 
-                                <Label Text="+Detalhes" Grid.Column="1">
+                                <Label Text="+ Detalhes" Grid.Column="1">
                                     <Label.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
                                     </Label.GestureRecognizers>
