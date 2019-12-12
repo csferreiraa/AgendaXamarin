@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AgendaContato.Paginas.ConsultaAgenda">
+             x:Class="AgendaContato.Paginas.ConsultarContato">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal">

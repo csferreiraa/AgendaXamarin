@@ -15,13 +15,16 @@
     <Compile Update="Paginas\CadastrarContato.xaml.cs">
       <DependentUpon>CadastrarContato.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Paginas\ConsultarContato.xaml.cs">
+      <DependentUpon>ConsultarContato.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Paginas\CadastrarContato.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\ConsultaAgenda.xaml">
+    <EmbeddedResource Update="Paginas\ConsultarContato.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Paginas\Detalhe.xaml">

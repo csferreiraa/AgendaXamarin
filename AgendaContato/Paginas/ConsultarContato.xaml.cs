@@ -11,11 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace AgendaContato.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ConsultaAgenda : ContentPage
+    public partial class ConsultarContato : ContentPage
     {
         List<Agenda> Lista { get; set; }
 
-        public ConsultaAgenda()
+        public ConsultarContato()
         {
             InitializeComponent();
             DataBase database = new DataBase();

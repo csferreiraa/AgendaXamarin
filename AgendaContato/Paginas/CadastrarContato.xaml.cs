@@ -27,7 +27,7 @@ namespace AgendaContato.Paginas
 
             DataBase database = new DataBase();
             database.Create(agenda);
-            App.Current.MainPage = new NavigationPage(new ConsultaAgenda());
+            App.Current.MainPage = new NavigationPage(new ConsultarContato());
         }
     }
 }
