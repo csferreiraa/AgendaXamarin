@@ -1,20 +1,15 @@
-﻿using AgendaContato.Model;
+﻿using AgendaContato.Banco;
+using AgendaContato.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using AgendaContato.Banco;
 
 namespace AgendaContato.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CadastroAgenda : ContentPage
+    public partial class CadastrarContato : ContentPage
     {
-        public CadastroAgenda(Agenda agenda = null)
+        public CadastrarContato(Agenda agenda = null)
         {
             InitializeComponent();
         }

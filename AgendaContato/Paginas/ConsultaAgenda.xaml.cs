@@ -26,7 +26,7 @@ namespace AgendaContato.Paginas
 
         public void GoCadastro(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new CadastroAgenda());
+            Navigation.PushAsync(new CadastrarContato());
         }
 
         public void GoMinhaAgenda(object sender, EventArgs args)
