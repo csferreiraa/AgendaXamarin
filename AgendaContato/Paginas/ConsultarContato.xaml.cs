@@ -31,7 +31,7 @@ namespace AgendaContato.Paginas
 
         public void GoMinhaAgenda(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new MinhaAgendaCadastrada());
+            Navigation.PushAsync(new MeusContatosCadastrados());
         }
 
         public void MaisDetalhesActions(object sender, EventArgs args)

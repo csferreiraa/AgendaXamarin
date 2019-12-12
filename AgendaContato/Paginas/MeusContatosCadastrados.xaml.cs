@@ -12,11 +12,11 @@ using Xamarin.Forms.Xaml;
 namespace AgendaContato.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MinhaAgendaCadastrada : ContentPage
+    public partial class MeusContatosCadastrados : ContentPage
     {
         List<Agenda> Lista { get; set; }
 
-        public MinhaAgendaCadastrada()
+        public MeusContatosCadastrados()
         {
             InitializeComponent();
             DataBase database = new DataBase();

@@ -4,17 +4,17 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AgendaContato.Paginas.MinhaAgendaCadastrada">
+             x:Class="AgendaContato.Paginas.MeusContatosCadastrados">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Agenda Top" FontSize="24"/>
                 <Label Text="Encontre seus amigos"/>
             </StackLayout>
-            <!--<StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
                 <Button Text="Adicionar" Clicked="GoCadastro" />
                 <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
-            </StackLayout>-->
+            </StackLayout>
             <Entry Placeholder="Pesquisar"/>
             <Label Text="" x:Name="lblCount" />
             <ListView x:Name="ListaAgenda">

@@ -35,7 +35,7 @@ namespace AgendaContato.Paginas
             agenda.Email = Email.Text;
             DataBase database = new DataBase();
             database.Update(agenda);
-            App.Current.MainPage = new NavigationPage(new MinhaAgendaCadastrada());
+            App.Current.MainPage = new NavigationPage(new MeusContatosCadastrados());
 
         }
     }
