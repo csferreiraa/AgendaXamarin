@@ -1,4 +1,5 @@
-﻿using AgendaContato.Model;
+﻿using AgendaContato.Banco;
+using AgendaContato.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,12 @@ namespace AgendaContato.Paginas
         public ConsultaAgenda()
         {
             InitializeComponent();
+            
+            DataBase database = new DataBase();
+
+            var Lista = database.Consultar();
+            ListaAgenda.ItemsSource = database.Consultar();
+            lblCount.Text = Lista.Count.ToString();
         }
         public void GoCadastro(object sender, EventArgs args)
         {

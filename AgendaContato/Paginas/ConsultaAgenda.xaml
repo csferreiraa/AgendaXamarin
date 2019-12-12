@@ -16,29 +16,33 @@
                 <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
             </StackLayout>
             <Entry Placeholder="Pesquisar"/>
-            <Label Text="15 Contatos encontrados" />
-            <ListView>
+            <Label Text="" x:Name="lblCount"/>
+            <ListView x:Name="ListaAgenda">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="100"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto">
-                                </RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Label Grid.Column="0" Text="{Binding Nome}" FontAttributes="Bold"/>
-                            <Label Grid.Column="0" Text="{Binding Sobrenome}"/>
-                            <Label Grid.Column="0" Text="{Binding Telefone}"/>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto">
+                                    </RowDefinition>
+                                </Grid.RowDefinitions>
+                                <StackLayout  Grid.Column="0">
+                                    <Label Text="{Binding Nome}" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Sobrenome}"/>
+                                    <Label Text="{Binding Telefone}"/>
+                                </StackLayout>
 
-                            <Label Text="+Detalhes" Grid.Column="1">
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
-                                </Label.GestureRecognizers>
-                            </Label>
-                        </Grid>
+                                <Label Text="+Detalhes" Grid.Column="1">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="MaisDetalhesActions" CommandParameter="{Binding .}"/>
+                                    </Label.GestureRecognizers>
+                                </Label>
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

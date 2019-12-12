@@ -11,10 +11,10 @@
                 <Label Text="Agenda Top" FontSize="24"/>
                 <Label Text="Encontre seus amigos"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <!--<StackLayout Orientation="Horizontal">
                 <Button Text="Adicionar" Clicked="GoCadastro" />
                 <Button Text="Minha Agenda" Clicked="GoMinhaAgenda" />
-            </StackLayout>
+            </StackLayout>-->
             <Entry Placeholder="Pesquisar"/>
             <Label Text="15 Contatos encontrados" />
             <ListView>

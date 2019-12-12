@@ -17,7 +17,7 @@
                 <Label Text="Trabalho" />
             </StackLayout>
             <Entry x:Name="Email" Placeholder="Email" />
-            <Button Text="Salvar" Clicked="salvarAction()"/>
+            <Button Text="Salvar" Clicked="SalvarAction"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

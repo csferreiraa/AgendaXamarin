@@ -32,9 +32,7 @@ namespace AgendaContato.Paginas
 
             DataBase database = new DataBase();
             database.Create(agenda);
-
-            //TODO - Voltar para a tela de pesquisa
-            Navigation.PopAsync();
+            App.Current.MainPage = new NavigationPage(new ConsultaAgenda());
         }
     }
 }
