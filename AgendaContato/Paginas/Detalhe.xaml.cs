@@ -16,8 +16,7 @@ namespace AgendaContato.Paginas
         public Detalhe(Agenda agenda)
         {
             InitializeComponent();
-
-            DisplayAlert("MSG", agenda.Nome, "OK");
+            BindingContext = agenda;
         }
     }
 }

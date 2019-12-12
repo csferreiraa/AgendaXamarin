@@ -7,11 +7,20 @@
              x:Class="AgendaContato.Paginas.Detalhe">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding Nome}"/>
-            <Label Text="{Binding Sobrenome}"/>
-            <Label Text="{Binding Telefone}"/>
-            <Label Text="{Binding TipoTelofone}"/>
-            <Label Text="{Binding Email}"/>
+            <Label Text="{Binding Nome}" FontSize="18" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="{Binding Sobrenome}" FontSize="18" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tel: " FontAttributes="Bold"/>
+                <Label Text="{Binding Telefone}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Tipo de Telefone: " FontAttributes="Bold"/>
+                <Label Text="{Binding TipoTelofone}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Email: " FontAttributes="Bold"/>
+                <Label Text="{Binding Email}"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
