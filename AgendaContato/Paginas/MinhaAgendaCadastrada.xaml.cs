@@ -39,7 +39,7 @@ namespace AgendaContato.Paginas
             Label lblEditar = (Label)sender;
             TapGestureRecognizer tapGes = (TapGestureRecognizer)lblEditar.GestureRecognizers[0];
             Agenda agenda = tapGes.CommandParameter as Agenda;
-            Navigation.PushAsync(new EditarAgenda(agenda));
+            Navigation.PushAsync(new EditarContato(agenda));
         }
         public void ExcluirAction(object sender, EventArgs args)
         {

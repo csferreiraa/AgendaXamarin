@@ -12,10 +12,10 @@ using Xamarin.Forms.Xaml;
 namespace AgendaContato.Paginas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EditarAgenda : ContentPage
+    public partial class EditarContato : ContentPage
     {
         private Agenda agenda { get; set; }
-        public EditarAgenda(Agenda agenda)
+        public EditarContato(Agenda agenda)
         {
             InitializeComponent();
             this.agenda = agenda;
